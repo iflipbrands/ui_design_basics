@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <title>Week 1 UI Design Basics - Friday Assignment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn fundamental UI design skills with hands-on projects in Week 1: HTML & CSS Basics. Start with a basic HTML website on Monday.">
+    <meta name="keywords" content="HTML, CSS, UI design, web development, coding, programming, week 1, wk1, Friday, project, hands-on">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <button id="theme-toggle">Toggle Theme</button>
+    <main id="container">
+        <!--Sidebar Section-->
+        <aside class="sidebar">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQEby68hKltHFQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1703502529066?e=1747872000&v=beta&t=lNByxBMTKuoN2lx2TSYM09OXnhBnrsBGygrwhK0SIwU" 
+                 alt="Profile Photo" 
+                 class="profile-photo">
+            <div class="profile-info">
+                <a href="https://www.linkedin.com/in/iamjdw" target="_blank" class="name-link">Jasmine Wilson</a>
+                <span class="title">Creative Director / Operations</span>
+            </div>
+            <h3>Profile</h3>
+            <p>Hi my name is Jasmine Wilson. This is my fifth assignment to create an appealing html website. I wanted it to look pretty so I added my own little styling touch.</p>
+           <br> <hr> <br>
+            <h2>Blog</h2>
+        <article>
+          <h3>Day 1: Hello, HTML <span style="font-size: 0.8em; color: var(--text); opacity: 0.7;">03/18/2025</span></h3>
+          <p>I wrote my very first HTML page and added my picture. It was adorable and empowering.</p>
+        </article>
+        <article>
+          <h3>Day 2: Forms and Lists <span style="font-size: 0.8em; color: var(--text); opacity: 0.7;">03/19/2025</span></h3>
+          <p>Built a profile form and listed my assignments to do for the day 💻</p>
+        </article>
+        <article>
+          <h3>Day 3: Getting Creative <span style="font-size: 0.8em; color: var(--text); opacity: 0.7;">03/20/2025</span></h3>
+          <p>Added some personality with colors and styling to make my site unique ✨</p>
+        </article>
+        <article>
+          <h3>Day 4: Dark Mode <span style="font-size: 0.8em; color: var(--text); opacity: 0.7;">03/21/2025</span></h3>
+          <p>Implemented a sophisticated dark theme with custom colors and gradients 🌙</p>
+        </article>
+        <article>
+          <h3>Day 5: Polish & Responsive Design <span style="font-size: 0.8em; color: var(--text); opacity: 0.7;">03/22/2025</span></h3>
+          <p>Enhanced mobile responsiveness, added my professional details, and implemented a theme toggle switch! 🎨</p>
+        </article>
+        </aside>
+
+        <!--Primary Section-->
+        <section class="primary">
+           <img src="https://media.licdn.com/dms/image/v2/D5616AQH6DFcOG_olMg/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1696798475040?e=1748476800&v=beta&t=T33Lbwiu2jVbu0GT2Szq381mZze-Wn1_CQwgirp1Nt8" 
+                alt="LinkedIn Banner" 
+                class="banner-image">
+           <h2>Friday Assignment</h2>
+           <p>Today I polished the user experience and improved responsive design. I fixed profile image scaling across devices and added my name and title for better branding. I moved the LinkedIn link to a clean footer with copyright info. The biggest update was a theme toggle that switches between dark and light mode, giving users a sleek and customizable viewing experience.</p>
+            <ol class="assignment-list">
+                <li>Enhanced responsive design for mobile devices</li>
+                <li>Added name and occupation under profile photo</li>
+                <li>Implemented copyright footer with LinkedIn link</li>
+                <li>Created theme toggle functionality</li>
+                <li>Refined light mode with business-friendly styling</li>
+            </ol>
+           <form class="contact-form">
+                <h3>Contact Form</h3>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p> 2025 <a href="https://www.linkedin.com/in/iamjdw" target="_blank">Jasmine Wilson</a>. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
