@@ -1,11 +1,11 @@
 # Week 2 – UI Design Basics (Mar 31 – Apr 4, 2025)
 
-## 🔄 Monday (3/31) – Restructure Day
+## 🔄 Monday (3/24-28) – Restructure Week
 - Reorganized folder structure across local and GitHub
 - Fixed GitHub display issue using `.gitkeep`
 - Cleaned up and rebuilt `Week2/` and `1_Mon/` layout folders
 
-## 🔧 Tuesday–Friday (4/1 – 4/4) – Catch-Up Plan
+## 🔧 Tuesday–Friday (3/31 – 4/4) – Catch-Up Plan
 - Finish Liberty Love author layout
 - Apply box model concepts
 - Practice margin, padding, borders, and positioning
