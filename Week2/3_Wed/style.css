@@ -7,7 +7,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background-image: url('https://ideogram.ai/assets/image/lossless/response/YCAL0TevTDSbl1CQXe2M9Q');
-  background-size:cover;
+  background-size: cover;
   color: #0a1f44;
   padding: 20px;
   line-height: 1.6;
@@ -17,6 +17,7 @@ body {
 .container {
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .author-card {
@@ -30,6 +31,7 @@ body {
   display: flex;
   align-items: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .author-card h1 {
@@ -69,12 +71,33 @@ body {
   font-size: 0.9rem;
 }
 
-.box-model-main, .box-model-inside {
-  display: none;
+.box-model-main {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.box-model-inside {
+  background: #fff;
+  padding: 20px;
+  border: 5px solid #990000;
+  margin: 20px auto;
+  width: 300px;
+  border-radius: 8px;
+}
+
+.content {
+  background: #990000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 .book-container {
   flex: 0 0 auto;
+  margin-bottom: 20px;
 }
 
 .book-info {
@@ -85,8 +108,10 @@ body {
 .book-icon {
   filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
   transition: transform 0.3s ease;
-  margin: 0;
+  margin: 0 auto;
   display: block;
+  width: 250px;
+  height: auto;
 }
 
 .book-icon:hover {
@@ -96,26 +121,18 @@ body {
 .special-offer {
   background: #f8f8f8;
   border: 2px dashed #0a1f44;
-  padding: 20px 20px;
+  padding: 20px;
   border-radius: 8px;
   margin-top: 20px;
   width: 100%;
 }
 
-.special-offer h2 {
-  margin-bottom: 20px;
-  color: #ffff;
-  font-size: 1.8rem;
-}
-
 .offer-content {
-  
   color: #0a1f44;
-  padding: 0px;
+  padding: 0;
   border-radius: 8px;
   max-width: 800px;
   margin: 0 auto;
-  
 }
 
 .offer-content h3 {
@@ -127,14 +144,6 @@ body {
 .offer-content p {
   margin-bottom: 20px;
   color: #0a1f44;
-}
-
-.content {
-  background: #990000;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  font-weight: bold;
 }
 
 ul {
@@ -200,19 +209,9 @@ li strong {
   background-color: #152a54;
 }
 
-@media (max-width: 768px) {
-  .author-card {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .book-info {
-      text-align: center;
-  }
-}
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   margin: 30px auto;
@@ -244,12 +243,13 @@ li strong {
     text-align: center;
   }
 
-  .book-sector {
+  .book-icon {
     width: 60%;
     height: auto;
   }
 
-  .container {
-    padding: 0 15px;
+  .email-form,
+  .submit-btn {
+    width: 100%;
   }
 }
