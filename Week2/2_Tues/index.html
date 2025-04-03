@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      document.getElementById('emailForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    alert('Thank you for signing up! We\'ll be in touch soon.');
+    this.reset();
+});
+
+
+    </script>
+</head>
+<body>
+    <main class="container">
+        <section class="author-card">
+            <div class="badge">📖 New Release</div>
+            <div class="book-container">
+                <img src="https://iili.io/3RBqR29.png" class="book-icon" width="250" height="350">
+            </div>
+            <div class="book-info">
+                <h1>America the Free</h1>
+                <h2 class="subtitle">The Voice Beneath the Crown</h2>
+                <p class="tagline">By Liberty Love</p>
+                <p class="description">
+                    A poetic and powerful reimagining of the American narrative through the eyes of Lady Liberty. 
+                    This book explores identity, injustice, and hope with honesty and grace—inviting readers to reflect, connect, and reimagine what it truly means to be "free."
+                </p>
+                <p><strong>Genre:</strong> Social Reflection, Political Commentary, Modern Humanitarian Prose</p>
+                <p><strong>Available Formats:</strong> Paperback, eBook, Audiobook</p>
+                <a href="#" class="purchase-btn">Buy Now</a>
+            </div>
+        </section>
+
+        <section class="box-model-main">
+            <h2>Inside the Book</h2>
+            
+            <div class="box-model-inside">
+              <div class="content">Content</div>
+            </div>
+          
+            <div class="video-wrapper">
+              <iframe 
+                src="https://www.youtube.com/embed/nv4FZAUZ0yA" 
+                title="Liberty Love Video" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          
+            <ul>
+              <li><strong>Freedom:</strong> Reexamined through lived experience</li>
+              <li><strong>Injustice:</strong> Named with clarity and compassion</li>
+              <li><strong>Hope:</strong> A light still burning within us all</li>
+              <li><strong>Voice:</strong> Yours, finally heard</li>
+            </ul>
+          </section>
+          
+        <section class="box-model-main">
+            <h2>Inside the Book</h2>
+            <div class="box-model-inside">
+                <div class="content">
+                </div>
+            </div>
+            <ul>
+              <li><strong>Freedom:</strong> Reexamined through lived experience</li>
+              <li><strong>Injustice:</strong> Named with clarity and compassion</li>
+              <li><strong>Hope:</strong> A light still burning within us all</li>
+              <li><strong>Voice:</strong> Yours, finally heard</li>
+            </ul>
+        </section>
+        <div class="special-offer">
+           
+            <div class="offer-content">
+                <h3>Join Our Mailing List</h3>
+                <p>Sign up and win a FREE gift with your order!</p>
+                <form id="emailForm" class="email-form">
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
