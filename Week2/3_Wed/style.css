@@ -228,3 +228,28 @@ li strong {
   height: 100%;
   border: none;
 }
+
+@media (max-width: 768px) {
+  .author-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .book-container {
+    margin-bottom: 20px;
+  }
+
+  .book-info {
+    text-align: center;
+  }
+
+  .book-sector {
+    width: 60%;
+    height: auto;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
