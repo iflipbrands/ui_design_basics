@@ -163,20 +163,26 @@ li strong {
   margin-right: 10px;
 }
 
-.purchase-btn {
-  display: inline-block;
-  background-color: #990000;
+.purchase-btn,
+.submit-btn {
+  background: linear-gradient(to right, #990000, #0a1f44); /* red to navy blue */
   color: white;
   text-decoration: none;
   padding: 12px 30px;
   border-radius: 25px;
-  margin-top: 20px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.purchase-btn:hover {
-  background-color: #7a0000;
+.purchase-btn:hover,
+.submit-btn:hover {
+  background: linear-gradient(to right, #0a1f44, #990000); /* reverse on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  opacity: 0.95;
 }
 
 .email-form {
