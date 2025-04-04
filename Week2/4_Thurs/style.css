@@ -6,8 +6,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-image: url('https://ideogram.ai/assets/image/lossless/response/YCAL0TevTDSbl1CQXe2M9Q');
-  background-size: cover;
+  background-color: #12397a;
   color: #0a1f44;
   padding: 20px;
   line-height: 1.6;
@@ -171,7 +170,7 @@ li strong {
   padding: 12px 30px;
   border-radius: 25px;
   font-weight: bold;
-  border: none;
+  border: 1px solid #12397a;
   transition: all 0.3s ease;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -213,6 +212,30 @@ li strong {
 
 .submit-btn:hover {
   background-color: #152a54;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-group .purchase-btn {
+  flex: 1 1 auto;
+  text-align: center;
+  min-width: 150px;
+}
+
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-group .purchase-btn {
+    width: 100%;
+  }
 }
 
 .video-wrapper {
